@@ -1,0 +1,25 @@
+/* Write a program to print
+*   *   *   *
+    *   *   *
+        *   *
+            * 
+            */
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int n = 4;
+    for (int i = n; i > 0; i--)
+    {
+        for (int k = i; k < n; k++)
+            cout <<"  ";
+
+        for (int j = i; j > 0; j--)
+            cout << "* ";
+
+        cout << endl;
+    }
+
+    return 0;
+}
